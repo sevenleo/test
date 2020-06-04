@@ -1,9 +1,3 @@
-def str2bool(txt):
-	if txt == '':
-		return False
-	return txt.lower() in ("yes", "true", "t", "1","y","sim")
-	
-
 import time
 
 def data():
@@ -15,8 +9,13 @@ def hora():
 def now():
 	return str(time.strftime('%Y/%m/%d %H:%M:%S'))
 	
+def str2bool(txt):
+	if txt == '':
+		return False
+	return txt.lower() in ("yes", "true", "t", "1","y","sim")
 	
-	def log(message0='',message1='',message2='',message3='',message4='',message5=''):
+	
+def log(message0='',message1='',message2='',message3='',message4='',message5=''):
 	print(str(message0),str(message1),str(message2),str(message3),str(message4),str(message5), file=fileoutput)
 
 	if not cleanoutput:
