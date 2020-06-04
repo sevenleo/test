@@ -1,3 +1,6 @@
+def testa(abc=""):
+	print("testado: "+abc)
+	
 import time
 
 def data():
@@ -42,5 +45,4 @@ def beta():
 	except Exception as e:
 		raise e
 	
-def testa(abc=""):
-	print("testado: "+abc)
+
