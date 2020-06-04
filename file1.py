@@ -1,7 +1,7 @@
 def testa(abc=""):
 	print("testado: "+abc)
 	
-import time
+exec('import time')
 
 def data():
 	return time.strftime('%Y/%m/%d')
